@@ -1,0 +1,44 @@
+@use '../../scss/' as *;
+
+.movie-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    &__khong-tim-thay{
+        color: $color-txt;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    &__loadMore{
+        text-align: center;
+    }
+
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+}
+
+    @include mobile{
+            grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.movie-search{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+    input{
+        width: 100%;
+        padding-right: 8rem;
+    }
+
+    button{
+        position: absolute;
+        right: 0;
+        top: 2px;
+        
+    }
+}
