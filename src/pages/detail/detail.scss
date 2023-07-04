@@ -36,13 +36,13 @@
     @include flex(flex-start, flex-start);
     margin-left: auto;
     margin-right: auto;
-    margin-top: -200px;
+    margin-top: -300px;
     position: relative;
     padding: 0 4rem;
 
     &__poster{
         flex: 1;
-
+        margin-right: 20px;
         @include mobile{
             display: none;
         }
@@ -55,7 +55,6 @@
 
     &__info{
         width: 70%;
-        padding: 0 2rem;
         color: $color-txt;
         @include mobile{
             width: 100%;
@@ -70,8 +69,7 @@
 
         .genres{
             span{
-                padding: 10px 18px;
-                border: 2px solid $color-txt;
+                margin-right: 10px;
                 border-radius: $border-radius;
                 margin-right: 10px;
                 font-size: .8rem;
